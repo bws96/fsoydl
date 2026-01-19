@@ -1,4 +1,17 @@
 User-agent: *
 Allow: /
+Disallow: /.idx/
+Disallow: /.vscode/
+Disallow: /README.md
+Disallow: /GEMINI.md
+Disallow: /blueprint.md
+
+# Ensure Googlebot can crawl everything
+User-agent: Googlebot
+Allow: /
+
+# Ensure Naver bot (Yeti) can crawl everything
+User-agent: Yeti
+Allow: /
 
 Sitemap: https://fsoydl.pages.dev/sitemap.xml
