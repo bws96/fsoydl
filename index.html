@@ -7,6 +7,7 @@
     <meta name="description" content="Master AI tools, fix tech issues, and find your zen. The ultimate guide for digital nomads.">
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
@@ -15,12 +16,12 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo">Flow State</div>
+                <div class="logo">Flow State.</div>
                 <div class="nav-links">
                     <a href="#ai">AI Tools</a>
                     <a href="#howto">Quick Fixes</a>
                     <a href="#wellness">Wellness</a>
-                    <a href="#shop" style="color:var(--primary-color); font-weight:700;">Shop</a>
+                    <a href="#" onclick="alert('Digital Shop is opening soon!'); return false;" style="color:var(--primary-color); font-weight:700;">Shop</a>
                 </div>
             </nav>
         </div>
@@ -44,17 +45,19 @@
             
             <div class="grid-3">
                 <article class="card">
-                    <span class="tag">Writing</span>
-                    <h3 style="margin: 15px 0;">Writesonic Review</h3>
-                    <p style="margin-bottom: 20px; font-size: 0.9rem;">The best AI copywriter for blogs & ads. Is it better than Jasper?</p>
-                    <a href="articles/jasper-review.html" class="btn btn-primary" style="width:100%; text-align:center;">Try for Free →</a>
+                    <span class="tag" style="background:#f3e8ff; color:#7e22ce;">Top Pick</span>
+                    <h3 style="margin: 15px 0;">Writesonic (Best for 2026)</h3>
+                    <p style="margin-bottom: 20px; font-size: 0.9rem;">The #1 Jasper alternative. Cheaper, faster, and creates human-like articles.</p>
+                    <a href="articles/writesonic-review.html" class="btn btn-primary" style="width:100%; text-align:center;">Read Review →</a>
                 </article>
+
                 <article class="card">
                     <span class="tag">Design</span>
                     <h3 style="margin: 15px 0;">Midjourney Prompts</h3>
                     <p style="margin-bottom: 20px; font-size: 0.9rem;">Copy-paste these 50+ prompts to generate stunning visuals instantly.</p>
                     <a href="articles/midjourney-prompts.html" class="btn btn-primary" style="width:100%; text-align:center;">Get Prompts →</a>
                 </article>
+
                 <article class="card">
                     <span class="tag">Video</span>
                     <h3 style="margin: 15px 0;">InVideo AI</h3>
@@ -66,7 +69,7 @@
     </section>
 
     <div class="container">
-        <div class="ad-banner">
+        <div class="ad-banner" style="background: #f3f4f6; border: 2px dashed #ccc; text-align: center; padding: 40px; color: #888; margin: 40px 0;">
             [ Google AdSense Banner Space ]
         </div>
     </div>
@@ -80,27 +83,29 @@
             </div>
 
             <div class="howto-list">
-                <div class="howto-item" onclick="location.href='articles/iphone-black-screen.html'">
+                <a href="articles/iphone-black-screen.html" class="howto-item" style="display: flex; justify-content: space-between; align-items: center; background: white; padding: 20px; border-radius: 10px; margin-bottom: 15px; border: 1px solid #eee;">
                     <div>
-                        <h3>How to fix iPhone Black Screen (2026 Updated)</h3>
+                        <h3><i class="fa-brands fa-apple"></i> How to fix iPhone Black Screen</h3>
                         <p style="font-size:0.85rem; color:#6b7280; margin-top:5px;">Views: 1.2M • Tech Support</p>
                     </div>
-                    <span>👉</span>
-                </div>
-                <div class="howto-item" onclick="location.href='articles/excel-vlookup.html'">
+                    <i class="fa-solid fa-chevron-right" style="color:#ccc;"></i>
+                </a>
+
+                <a href="articles/excel-vlookup.html" class="howto-item" style="display: flex; justify-content: space-between; align-items: center; background: white; padding: 20px; border-radius: 10px; margin-bottom: 15px; border: 1px solid #eee;">
                     <div>
-                        <h3>Excel Formula: VLOOKUP vs XLOOKUP explained</h3>
+                        <h3><i class="fa-solid fa-table"></i> Excel Formula: VLOOKUP vs XLOOKUP</h3>
                         <p style="font-size:0.85rem; color:#6b7280; margin-top:5px;">Views: 850K • Productivity</p>
                     </div>
-                    <span>👉</span>
-                </div>
-                <div class="howto-item" onclick="location.href='articles/obs-settings.html'">
+                    <i class="fa-solid fa-chevron-right" style="color:#ccc;"></i>
+                </a>
+
+                <a href="articles/obs-settings.html" class="howto-item" style="display: flex; justify-content: space-between; align-items: center; background: white; padding: 20px; border-radius: 10px; margin-bottom: 15px; border: 1px solid #eee;">
                     <div>
-                        <h3>Best OBS Settings for Low-End PCs</h3>
+                        <h3><i class="fa-solid fa-video"></i> Best OBS Settings for Low-End PCs</h3>
                         <p style="font-size:0.85rem; color:#6b7280; margin-top:5px;">Views: 500K • Streaming</p>
                     </div>
-                    <span>👉</span>
-                </div>
+                    <i class="fa-solid fa-chevron-right" style="color:#ccc;"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -111,9 +116,11 @@
                 <div class="wellness-content">
                     <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Feeling Burned Out?</h2>
                     <p style="font-size: 1.1rem; margin-bottom: 30px;">Recharge your mind with our digital wellness toolkit.</p>
-                    <a href="#" class="btn" style="background: white; color: #333; font-weight: bold;">Download Digital Planner ($9)</a>
+                    <a href="#" onclick="alert('Digital Planner coming soon!'); return false;" class="btn" style="background: white; color: #333; font-weight: bold;">Download Digital Planner ($9)</a>
                     <br><br>
-                    <a href="articles/desk-meditation.html" style="color: white; text-decoration: underline; font-size: 0.9rem;">Read: 5-Min Desk Meditation</a>
+                    <a href="articles/desk-meditation.html" style="color: white; text-decoration: underline; font-size: 0.9rem;">
+                        <i class="fa-solid fa-spa"></i> Read: 5-Min Desk Meditation
+                    </a>
                 </div>
             </div>
         </div>
@@ -124,7 +131,8 @@
             <div class="footer-links">
                 <a href="about.html">About Us</a>
                 <a href="contact.html">Contact</a>
-                <a href="privacy.html">Privacy Policy</a> <a href="terms.html">Terms of Service</a>
+                <a href="privacy.html">Privacy Policy</a> 
+                <a href="terms.html">Terms of Service</a>
             </div>
             <p>&copy; 2026 Flow State. All rights reserved.</p>
         </div>
