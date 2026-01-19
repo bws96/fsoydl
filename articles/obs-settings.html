@@ -6,21 +6,18 @@
     <title>Best OBS Settings for Low-End PCs (2026 Guide) | Flow State</title>
     <meta name="description" content="Stream without lag. Optimized OBS Studio settings for low-end laptops and old PCs.">
     <link rel="canonical" href="https://fsoydl.pages.dev/articles/obs-settings.html">
-
-    <!-- Open Graph / Facebook -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <!-- Meta tags included -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://fsoydl.pages.dev/articles/obs-settings.html">
     <meta property="og:title" content="Best OBS Settings for Low-End PCs (2026 Guide) | Flow State">
     <meta property="og:description" content="Stream without lag. Optimized OBS Studio settings for low-end laptops and old PCs.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80">
-
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://fsoydl.pages.dev/articles/obs-settings.html">
     <meta property="twitter:title" content="Best OBS Settings for Low-End PCs (2026 Guide) | Flow State">
     <meta property="twitter:description" content="Stream without lag. Optimized OBS Studio settings for low-end laptops and old PCs.">
     <meta property="twitter:image" content="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80">
-
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -33,9 +30,6 @@
       "dateModified": "2026-01-21"
     }
     </script>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="stylesheet" href="../style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1919992246972803" crossorigin="anonymous"></script>
 </head>
@@ -51,21 +45,30 @@
 
             <div class="content">
                 <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Gaming setup with computer screens" style="width:100%; border-radius: 10px; margin-bottom: 30px;" referrerpolicy="no-referrer">
-                <p>Streaming on a budget laptop? You don't need a $3,000 rig to start. Adjusting a few hidden settings in OBS Studio can double your FPS.</p>
+                <p>Streaming on a budget laptop? You don't need a $3,000 rig to start. Adjusting a few hidden settings in OBS Studio can double your FPS and reduce lag significantly.</p>
 
-                <h2>1. Output Settings</h2>
-                <p>Go to <strong>Settings > Output</strong>. Set your "Encoder" to <strong>Hardware (NVENC)</strong> if you have an NVIDIA card. If not, use <strong>x264</strong> but set the "CPU Usage Preset" to <strong>ultrafast</strong>.</p>
+                <h2>1. Output Settings (The Engine Room)</h2>
+                <p>Go to <strong>Settings > Output</strong> and switch "Output Mode" to <strong>Advanced</strong>.</p>
+                <ul>
+                    <li><strong>Encoder:</strong> Use <strong>Hardware (NVENC)</strong> if you have an NVIDIA card. It offloads work from your CPU. If you don't, use <strong>x264</strong> (CPU encoding).</li>
+                    <li><strong>CPU Usage Preset (for x264):</strong> Set this to <strong>ultrafast</strong> or <strong>superfast</strong>. This lowers video quality slightly but frees up massive CPU resources for your game.</li>
+                </ul>
 
                 <div class="highlight-box">
                     <strong>💡 Pro Tip:</strong><br>
-                    Lower your "Output (Scaled) Resolution" to 720p (1280x720). It looks fine on mobile screens and saves huge processing power.
+                    Go to <strong>Settings > Video</strong> and change "Output (Scaled) Resolution" to <strong>1280x720</strong>. Streaming in 720p looks perfectly fine on mobile and saves huge processing power compared to 1080p.
                 </div>
 
                 <h2>2. Video Bitrate</h2>
-                <p>Don't set this too high. For 720p streaming, <strong>2500 Kbps</strong> to <strong>3500 Kbps</strong> is the sweet spot.</p>
+                <p>Bitrate dictates quality and internet usage. Don't set this too high if your PC is weak.</p>
+                <ul>
+                    <li><strong>720p 30fps:</strong> 2500 Kbps - 3000 Kbps</li>
+                    <li><strong>720p 60fps:</strong> 3500 Kbps - 4500 Kbps</li>
+                </ul>
 
-                <h2>3. Audio Settings</h2>
-                <p>Bad audio ruins streams faster than bad video. Go to Audio settings and ensure your Sample Rate is set to 44.1kHz or 48kHz to match your microphone.</p>
+                <h2>3. Essential Audio Settings</h2>
+                <p>Bad audio ruins streams faster than bad video. Go to Audio settings and ensure your Sample Rate matches your microphone (usually 48kHz).</p>
+                <p><strong>Add Filters:</strong> Right-click your mic in the Audio Mixer > Filters. Add <strong>Noise Suppression</strong> (to kill background fan noise) and <strong>Compressor</strong> (to even out your voice volume).</p>
             </div>
         </article>
 
