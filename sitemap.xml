@@ -41,4 +41,12 @@
     <loc>https://fsoydl.pages.dev/articles/writesonic-review.html</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://fsoydl.pages.dev/privacy.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://fsoydl.pages.dev/terms.html</loc>
+    <priority>0.5</priority>
+  </url>
 </urlset>
