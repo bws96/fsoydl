@@ -403,3 +403,144 @@ article h1 { font-size: 2.5rem; margin-bottom: 10px; line-height: 1.2; backgroun
     height: 1px;
     background: var(--glass-border);
 }
+
+/* --- [12. Feedback Widget] --- */
+.feedback-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--secondary), var(--primary));
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.feedback-btn:hover {
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0 15px 40px rgba(236, 72, 153, 0.4);
+}
+
+.feedback-btn i {
+    font-size: 1.5rem;
+}
+
+/* Modal Overlay */
+.feedback-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 2000;
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.feedback-modal-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+/* Modal Content */
+.feedback-modal {
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    padding: 40px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.feedback-modal-overlay.active .feedback-modal {
+    transform: translateY(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.modal-close:hover {
+    color: var(--text-main);
+}
+
+.feedback-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--text-main);
+}
+
+.feedback-form p {
+    color: var(--text-muted);
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-main);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    color: var(--text-main);
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.feedback-submit-btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
