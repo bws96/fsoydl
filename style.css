@@ -333,3 +333,73 @@ article h1 { font-size: 2.5rem; margin-bottom: 10px; line-height: 1.2; backgroun
     font-size: 2rem;
 }
 
+/* --- [11. Quote Box] --- */
+.quote-container {
+    padding: 60px 0;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+/* Background Glow for Quote Box */
+.quote-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.2) 0%, transparent 70%);
+    z-index: -1;
+    filter: blur(50px);
+}
+
+.quote-box {
+    background: var(--card-bg);
+    padding: 50px 40px;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px -15px rgba(0,0,0,0.5);
+    max-width: 850px;
+    margin: 0 auto;
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(15px);
+    position: relative;
+    overflow: hidden;
+}
+
+.quote-label {
+    color: var(--secondary);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.quote-text {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--text-main);
+    line-height: 1.4;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.quote-author {
+    font-size: 1rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.quote-author::before {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: var(--glass-border);
+}
