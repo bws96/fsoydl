@@ -190,5 +190,22 @@
         </div>
     </footer>
 
+    <div id="cookie-banner" style="position: fixed; bottom: 20px; left: 20px; right: 20px; background: #1f2937; color: white; padding: 20px; border-radius: 10px; z-index: 1000; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 10px 25px rgba(0,0,0,0.5); max-width: 600px; margin: 0 auto;">
+        <p style="margin: 0; font-size: 0.9rem; margin-right: 20px;">
+            🍪 We use cookies to ensure you get the best experience on our website. 
+            <a href="privacy.html" style="color: #60a5fa; text-decoration: underline;">Learn more</a>
+        </p>
+        <button onclick="document.getElementById('cookie-banner').style.display='none'; localStorage.setItem('cookieSeen','true')" style="background: #2563EB; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; white-space: nowrap;">
+            Got it!
+        </button>
+    </div>
+    
+    <script>
+        // 이미 동의했으면 배너 숨기기
+        if(localStorage.getItem('cookieSeen') === 'true') {
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+    </script>
+
 </body>
 </html>
