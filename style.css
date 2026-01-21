@@ -406,6 +406,7 @@ article h1 { font-size: 2.5rem; margin-bottom: 10px; line-height: 1.2; backgroun
 
 /* --- [12. Feedback Widget] --- */
 .feedback-btn {
+    display: none; /* Hidden for now */
     position: fixed;
     bottom: 30px;
     right: 30px;
