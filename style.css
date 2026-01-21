@@ -52,6 +52,11 @@ ul { list-style: none; }
     filter: brightness(1.1);
 }
 
+.btn-full {
+    width: 100%;
+    text-align: center;
+}
+
 /* --- [3. 헤더 (Navigation)] --- */
 header { 
     background: rgba(15, 23, 42, 0.85); 
@@ -164,6 +169,11 @@ nav { display: flex; justify-content: space-between; align-items: center; height
     font-weight: 700; 
     text-transform: uppercase;
     display: inline-block;
+}
+
+.tag.tag-purple {
+    background: rgba(126, 34, 206, 0.2);
+    color: #d8b4fe;
 }
 
 /* --- [6. 섹션 B: How-To] --- */
@@ -307,3 +317,19 @@ article h1 { font-size: 2.5rem; margin-bottom: 10px; line-height: 1.2; backgroun
 }
 .cta-area h3 { font-size: 2rem; margin-bottom: 10px; color: var(--text-main); }
 .cta-area p { color: var(--text-muted); margin-bottom: 30px; }
+
+/* --- [10. Related Posts Section] --- */
+.related-section {
+    margin-top: 50px;
+    border-top: 1px solid var(--glass-border);
+}
+
+.related-section .section-title {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.related-section .section-title h2 {
+    font-size: 2rem;
+}
+
