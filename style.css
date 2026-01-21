@@ -29,7 +29,7 @@ ul { list-style: none; }
 
 /* --- [2. 레이아웃 유틸리티] --- */
 .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-.section-padding { padding: 100px 0; }
+.section-padding { padding: 70px 0; }
 
 .btn { 
     display: inline-block; 
@@ -84,7 +84,7 @@ nav { display: flex; justify-content: space-between; align-items: center; height
 /* --- [4. 히어로 섹션] --- */
 .hero { 
     text-align: center; 
-    padding: 120px 20px; 
+    padding: 85px 20px; 
     position: relative;
     overflow: hidden;
 }
@@ -335,7 +335,7 @@ article h1 { font-size: 2.5rem; margin-bottom: 10px; line-height: 1.2; backgroun
 
 /* --- [11. Quote Box] --- */
 .quote-container {
-    padding: 60px 0;
+    padding: 40px 0;
     position: relative;
     z-index: 10;
     text-align: center;
