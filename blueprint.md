@@ -9,6 +9,9 @@ Flow State is a resource hub for digital nomads and creators, featuring AI tools
 
 ## Current Plan
 1.  **Favicon:** Add a `favicon.svg` to brand the site.
-2.  **Navigation:** Make the "Flow State" logo in the header clickable, redirecting to the homepage.
+    redirecting to the homepage.
 3.  **Visual Design:** Enhance the main page visuals by replacing the flat single-color background with a subtle gradient or pattern to reduce monotony.
-4.  **Deployment:** Synchronize latest changes with the GitHub repository.
+4.  **Content Expansion:** Transform the `articles/invideo-ai.html` review into a comprehensive "Ultimate Guide," adding detailed feature breakdowns, pricing tables, a step-by-step workflow, and an FAQ section to increase perceived value.
+5.  **Link Update:** Update all affiliate links to the new tracking URL `https://invideo.sjv.io/YRW9ze`.
+6.  **Conversion Optimization:** Add a second strategic CTA button within the InVideo AI article to improve click-through rates.
+7.  **Deployment:** Synchronize latest changes with the GitHub repository.
