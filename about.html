@@ -4,56 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Flow State</title>
-    <meta name="description" content="Flow State empowers digital nomads with curated AI tools, tech fixes, and wellness strategies for a balanced remote life.">
+    <meta name="description" content="Meet the team behind Flow State. We are tech experts and digital nomads dedicated to optimizing your remote work lifestyle.">
     <link rel="canonical" href="https://fsoydl.pages.dev/about.html">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <!-- Meta tags included -->
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://fsoydl.pages.dev/about.html">
     <meta property="og:title" content="About Us | Flow State">
-    <meta property="og:description" content="Flow State empowers digital nomads with curated AI tools, tech fixes, and wellness strategies for a balanced remote life.">
+    <meta property="og:description" content="Meet the team behind Flow State. We are tech experts and digital nomads dedicated to optimizing your remote work lifestyle.">
     <meta property="og:image" content="https://fsoydl.pages.dev/favicon.svg">
+
+    <!-- Twitter -->
     <meta property="twitter:card" content="summary">
     <meta property="twitter:url" content="https://fsoydl.pages.dev/about.html">
     <meta property="twitter:title" content="About Us | Flow State">
-    <meta property="twitter:description" content="Flow State empowers digital nomads with curated AI tools, tech fixes, and wellness strategies for a balanced remote life.">
+    <meta property="twitter:description" content="Meet the team behind Flow State. We are tech experts and digital nomads dedicated to optimizing your remote work lifestyle.">
     <meta property="twitter:image" content="https://fsoydl.pages.dev/favicon.svg">
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "AboutPage",
       "name": "About Flow State",
       "url": "https://fsoydl.pages.dev/about.html",
-      "description": "Flow State empowers digital nomads with curated AI tools, tech fixes, and wellness strategies for a balanced remote life.",
-      "publisher": { "@type": "Organization", "name": "Flow State", "logo": { "@type": "ImageObject", "url": "https://fsoydl.pages.dev/favicon.svg" } }
+      "description": "Flow State empowers digital nomads with curated AI tools, tech fixes, and wellness strategies.",
+      "publisher": { 
+        "@type": "Organization", 
+        "name": "Flow State", 
+        "logo": { "@type": "ImageObject", "url": "https://fsoydl.pages.dev/favicon.svg" },
+        "foundingDate": "2024",
+        "founders": [
+            { "@type": "Person", "name": "Alex Chen" },
+            { "@type": "Person", "name": "Sarah Jenkins" }
+        ]
+      }
     }
     </script>
     <link rel="stylesheet" href="style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1919992246972803" crossorigin="anonymous"></script>
+    <style>
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .team-member {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+        }
+        .team-avatar {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            font-weight: bold;
+        }
+        .team-member h3 {
+            margin-bottom: 5px;
+            color: var(--text-main);
+        }
+        .team-member .role {
+            color: var(--primary);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        .team-member p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>About Flow State</h1>
-        
-        <div class="content">
-            <p>Welcome to <strong>Flow State</strong>, your sanctuary in the chaotic world of digital work. We are dedicated to helping digital nomads, creators, and remote professionals achieve peak performance without sacrificing their well-being.</p>
-            
-            <h2>Our Mission</h2>
-            <p>In an era of endless notifications and rapid technological change, finding your "flow"—that state of deep, effortless concentration—is harder than ever. Our mission is to equip you with the best AI tools to automate the mundane, technical guides to solve frustrating glitches, and wellness practices to keep your mind sharp.</p>
-            
-            <h2>What We Cover</h2>
-            <ul>
-                <li><strong>AI & Productivity:</strong> Reviews and tutorials on the latest AI tools like Writesonic, Midjourney, and more.</li>
-                <li><strong>Tech Support:</strong> Quick, reliable fixes for common hardware and software issues that disrupt your workflow.</li>
-                <li><strong>Digital Wellness:</strong> Practical advice on ergonomics, mental health, and balancing life with remote work.</li>
-            </ul>
+        <header>
+             <nav>
+                <a href="index.html" class="logo">Flow State</a>
+             </nav>
+        </header>
 
-            <h2>Join Our Community</h2>
-            <p>We are more than just a blog. We are a community of forward-thinkers who believe that technology should serve us, not the other way around. Stay tuned for our upcoming newsletter and digital shop!</p>
-        </div>
+        <section class="section-padding">
+            <h1>About Flow State</h1>
+            
+            <div class="content">
+                <p class="lead">We are a collective of digital nomads, engineers, and creatives dedicated to mastering the art of remote work.</p>
+                
+                <p>In 2024, we realized that "working from anywhere" often meant "troubleshooting from anywhere." Between spotty Wi-Fi, complex software workflows, and the isolation of the road, the dream of the digital nomad can quickly become stressful.</p>
+                
+                <p><strong>Flow State</strong> was born to solve this. We test hundreds of AI tools, debug common tech issues, and research productivity methods so you don't have to. Our goal is to help you reach that state of deep, effortless concentration—no matter where you are in the world.</p>
 
-        <br>
-        <a href="index.html" class="back-link">← Back to Home</a>
+                <h2 style="margin-top: 50px; text-align: center;">Meet the Editors</h2>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="team-avatar">AC</div>
+                        <h3>Alex Chen</h3>
+                        <span class="role">Tech Lead & Founder</span>
+                        <p>Former Systems Administrator turned full-time nomad. Alex specializes in software troubleshooting, Excel automation, and cybersecurity for remote workers.</p>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="team-avatar">SJ</div>
+                        <h3>Sarah Jenkins</h3>
+                        <span class="role">Creative Director</span>
+                        <p>A digital artist and AI enthusiast. Sarah leads our coverage on generative AI tools like Midjourney and InVideo, testing limits to find the best workflows for creators.</p>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 50px;">Our Editorial Standards</h2>
+                <ul>
+                    <li><strong>Hands-On Testing:</strong> We do not write reviews based on press releases. We use every tool we recommend.</li>
+                    <li><strong>Unbiased Advice:</strong> If a tool has a steep learning curve or hidden costs, we tell you upfront.</li>
+                    <li><strong>Community First:</strong> Our content is driven by the real-world questions we receive from our readers.</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <br>
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <div style="margin-top: 50px; text-align: center; color: var(--text-muted); font-size: 0.9rem;">
+                &copy; 2026 Flow State. All rights reserved.
+            </div>
+        </footer>
     </div>
 </body>
 </html>

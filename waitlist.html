@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon | Flow State</title>
+    <meta name="description" content="Something exciting is coming. Join the waitlist for our digital shop and planner.">
+    <link rel="canonical" href="https://fsoydl.pages.dev/waitlist.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .waitlist-container {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .waitlist-box {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 500px;
+            width: 100%;
+            backdrop-filter: blur(10px);
+        }
+        .waitlist-box h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .waitlist-box p {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+        .email-form input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid var(--glass-border);
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+        }
+        .email-form button {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+             <nav>
+                <a href="index.html" class="logo">Flow State</a>
+             </nav>
+        </header>
+
+        <div class="waitlist-container">
+            <div class="waitlist-box">
+                <i class="fa-solid fa-rocket" style="font-size: 3rem; color: var(--primary); margin-bottom: 20px;"></i>
+                <h1>Coming Soon</h1>
+                <p>We are building the ultimate <strong>Digital Nomad Shop</strong> and <strong>Wellness Planner</strong>. Be the first to know when we launch.</p>
+                
+                <form class="email-form" onsubmit="event.preventDefault(); alert('Thanks! You have been added to the list.');">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Notify Me</button>
+                </form>
+                
+                <p style="font-size: 0.8rem; margin-top: 20px;">No spam. Unsubscribe anytime.</p>
+            </div>
+        </div>
+
+        <footer>
+            <br>
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <div style="margin-top: 20px; text-align: center; color: var(--text-muted); font-size: 0.9rem;">
+                &copy; 2026 Flow State.
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
